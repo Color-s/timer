@@ -1,0 +1,114 @@
+/* 基础样式 */
+body {
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: none;
+}
+
+.hero {
+  border: 1px solid #ced4da;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: center;
+}
+
+.countdown {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.jishiqi, .button-group button {
+  margin-right: 5px;
+  padding: 8px 15px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.jishiqi:hover, .button-group button:hover {
+  background-color: #0056b3;
+}
+
+.button-group button.active {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.hero-lane-group {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+.level-control {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.level-control button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.level {
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+/* 倒计时圆环样式 */
+.countdown-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.countdown-svg {
+  transform: rotate(-90deg);
+}
+
+.countdown-circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s linear;
+}
+
+.countdown-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
